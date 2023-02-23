@@ -15,6 +15,7 @@ import Testimonials from "../../components/Testimonials/testimonials";
 import DownloadApp from "../../components/Download-app/download-app";
 import Blogs2 from "../../components/Blogs2/blogs2";
 import Footer2 from "../../components/Footer2/footer2";
+import VideoFeed from "../../components/Streaming/VideoFeed";
 
 const MobileAppLight = () => {
   const navbarRef = React.useRef(null);
@@ -44,6 +45,7 @@ const MobileAppLight = () => {
       <LightTheme mobileappstyle>
         <NavbarMobileApp nr={navbarRef} theme="themeL" />
         <Intro6 />
+        <VideoFeed />
         <Clients3 />
         <Services7 lightTheme />
         <Services8 />

@@ -15,6 +15,7 @@ import Testimonials from "../../components/Testimonials/testimonials";
 import DownloadApp from "../../components/Download-app/download-app";
 import Blogs2 from "../../components/Blogs2/blogs2";
 import Footer2 from "../../components/Footer2/footer2";
+
 import VideoWithTeamStream from "../../components/Video-with-team/video-with-team-stream";
 
 const MobileAppDark = () => {
@@ -45,7 +46,7 @@ const MobileAppDark = () => {
       <DarkTheme mobileappstyle>
         <NavbarMobileApp nr={navbarRef} />
         <Intro6 />
-        <VideoWithTeamStream />
+        {/* <VideoWithTeamStream />
         <Clients3 />
         <Services7 />
         <Services8 />
@@ -55,8 +56,8 @@ const MobileAppDark = () => {
         <PricePackages />
         <Testimonials />
         <DownloadApp />
-        <Blogs2 />
-        <Footer2 />
+        <Blogs2 /> */}
+        {/* <Footer2 /> */}
       </DarkTheme>
     </>
   );

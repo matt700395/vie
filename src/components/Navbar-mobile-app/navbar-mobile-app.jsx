@@ -15,7 +15,7 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
       <div className="container">
         <Link href="/">
           <a className="logo">
-            {theme ? (
+            {/* {theme ? (
               theme === "themeL" ? (
                 <img ref={lr} src={appData.darkLogo} alt="logo" />
               ) : (
@@ -23,7 +23,10 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
               )
             ) : (
               <img ref={lr} src={appData.lightLogo} alt="logo" />
-            )}
+            )} */}
+
+            <img ref={lr} src={'/img/mmw.png'} alt="logo" style={{ marginTop:10, maxWidth:30}}/>
+
           </a>
         </Link>
 
@@ -57,59 +60,49 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
               </span>
               <div className="dropdown-menu">
                 <Link href="/homepage/home1-dark">
-                  <a className="dropdown-item">Main Home</a>
+                  <a className="dropdown-item" style={{textAlign:"center"}}>사랑한다 현대모비스</a>
                 </Link>
                 <Link href="/homepage/home2-dark">
-                  <a className="dropdown-item">Creative Agency</a>
+                  <a className="dropdown-item" style={{textAlign:"center"}}>현</a>
                 </Link>
                 <Link href="/homepage/home5-dark">
-                  <a className="dropdown-item">Digital Agency</a>
+                  <a className="dropdown-item" style={{textAlign:"center"}}>대</a>
                 </Link>
                 <Link href="/homepage/home4-dark">
-                  <a className="dropdown-item">Business One Page</a>
+                  <a className="dropdown-item" style={{textAlign:"center"}}>모</a>
                 </Link>
                 <Link href="/homepage/home3-dark">
-                  <a className="dropdown-item">Corporate Business</a>
+                  <a className="dropdown-item" style={{textAlign:"center"}}>비</a>
                 </Link>
                 <Link href="/homepage/home6-dark">
-                  <a className="dropdown-item">Modern Agency</a>
+                  <a className="dropdown-item" style={{textAlign:"center"}}>스</a>
                 </Link>
                 <Link href="/homepage/home7-dark">
-                  <a className="dropdown-item">Freelancer</a>
-                </Link>
-                <Link href="/homepage/home8-dark">
-                  <a className="dropdown-item">Architecture</a>
+                  <a className="dropdown-item" style={{textAlign:"center"}}>❣️</a>
                 </Link>
               </div>
             </li>
             <li className="nav-item">
               <Link href="/mobile-app/services-dark">
-                <a className="nav-link">Services</a>
+                <a className="nav-link">현대모비스</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/mobile-app/pricing-plan-dark">
-                <a className="nav-link">Pricing</a>
+                <a className="nav-link">멋쟁이 사자처럼</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/mobile-app/portfolio-dark">
               <a className="nav-link" >
-                Portfolio
-              </a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/mobile-app/shop-dark">
-              <a className="nav-link">
-                Products
+                고려대학교 세종캠퍼스
               </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/contact/contact-dark">
               <a className="nav-link" >
-                Contact
+                언더독 레볼루션
               </a>
               </Link>
             </li>

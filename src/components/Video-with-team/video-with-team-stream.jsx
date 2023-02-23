@@ -2,17 +2,16 @@ import React from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
 import { useRef } from "react";
+import Image from 'next/image'
 
 const VideoWithTeamStream = () => {
   const [isOpen, setOpen] = React.useState(false);
   const imgRef = useRef(null);
   const socketRef = useRef(null);
 
-
   React.useEffect(() => {
     console.clear();
   }, []);
-
 
   React.useEffect(() => {
       // Create a new WebSocket connection
@@ -36,8 +35,6 @@ const VideoWithTeamStream = () => {
       };
   }, []);
 
-
-
   return (
     <section
       className="team-vid section-padding bg-dark pt-0"
@@ -50,7 +47,18 @@ const VideoWithTeamStream = () => {
               className="vid-img bg-img"
               data-overlay-dark="2"
             >
-              <img ref={imgRef} alt="video feed" />
+              <img ref={imgRef} 
+                    style={{
+                      width: '50%',
+                      height: 'auto',
+                      margin: '0 auto',
+                      display: 'block',
+                      '@media (max-width: 767px)': {
+                        width: '70%',
+                        height: 'auto'
+                      }
+                    }}
+                 alt="video feed"/>
             </div>
           </div>
         </div>
