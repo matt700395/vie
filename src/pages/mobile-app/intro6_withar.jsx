@@ -1,7 +1,7 @@
 import React from "react";
 import VideoWithTeamStream from "../../components/Video-with-team/video-with-team-stream";
 
-const Intro6 = () => {
+const Intro6_withar = () => {
   return (
     <header className="mobile-app valign">
       <div className="container">
@@ -20,9 +20,7 @@ const Intro6 = () => {
               <h1 className="mb-20">
               With AR
               </h1>
-              <h5 className="mb-20">
-              A New world outside the vehicle.
-              </h5>
+
               <p>
               </p>
 
@@ -35,7 +33,14 @@ const Intro6 = () => {
               {/* <img src="/img/mobile-app/header-img.png" alt="" /> */}
               {/* <img src="/img/mobile-app/main_car.png" alt="" /> */}
               {/* <img src="/img/mobile-app/Group.png" alt="" /> */}
-              <img src="/img/mobile-app/electric-car-elements-screen.gif" alt="" />
+              <h5 className="mb-20">
+              AR필터 시연영상
+              </h5>
+              {/* <img src="/img/mobile-app/electric-car-elements-screen.gif" alt="" /> */}
+
+              <h5 className="mb-20">
+              AR필터 & 실시간 스트리밍 시연
+              </h5>
               <VideoWithTeamStream />
               {/* <video autoPlay={true} muteed controls >
                 <source src="/img/mobile-app/electric-car-elements-screen.mp4" type="video/mp4" />
@@ -81,4 +86,4 @@ const Intro6 = () => {
   );
 };
 
-export default Intro6;
+export default Intro6_withar;
